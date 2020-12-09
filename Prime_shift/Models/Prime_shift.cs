@@ -14,15 +14,15 @@ namespace Prime_shift
       }
       return list;
     }
-    public List<int> SortList (List<int> list, int prime)
+    public List<int> SortList (List<int> list, int prime, int userInput)
     {
       while(prime <= userInput)
       {
-        foreach (int number in list)
+        for (int i = 0; i < list.Count; i++)
         {
-          if (number % prime == 0)
+          if (i % prime == 0)
           {
-            list.Remove(number);
+            list.Remove(list[i]);
           }
           else
           {
@@ -35,3 +35,15 @@ namespace Prime_shift
     }
   }
 }
+
+// foreach (int number in list)
+//         {
+//           if (number % prime == 0)
+//           {
+//             list.Remove(number);
+//           }
+//           else
+//           {
+//             continue;
+//           }
+//         }
