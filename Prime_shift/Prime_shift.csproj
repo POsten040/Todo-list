@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- exe file will go here -->
+    <OutPutType>exe</OutPutType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
